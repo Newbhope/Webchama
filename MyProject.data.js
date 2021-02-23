@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'C:/Users/John/Desktop/02 Starter Kit Overview/BlueprintsToCpp/Binaries/HTML5/BlueprintsToCpp.data';
-    var REMOTE_PACKAGE_BASE = 'BlueprintsToCpp.data';
+    var PACKAGE_NAME = 'C:/Users/John/Desktop/hm/MyProject/Binaries/HTML5/MyProject.data';
+    var REMOTE_PACKAGE_BASE = 'MyProject.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -98,9 +98,9 @@ Module.expectedDataFileDownloads++;
     function assert(check, msg) {
       if (!check) throw msg + new Error().stack;
     }
-Module['FS_createPath']('/', 'BlueprintsToCpp', true, true);
-Module['FS_createPath']('/BlueprintsToCpp', 'Content', true, true);
-Module['FS_createPath']('/BlueprintsToCpp/Content', 'Paks', true, true);
+Module['FS_createPath']('/', 'MyProject', true, true);
+Module['FS_createPath']('/MyProject', 'Content', true, true);
+Module['FS_createPath']('/MyProject/Content', 'Paks', true, true);
 
     function DataRequest(start, end, audio) {
       this.start = start;
@@ -149,10 +149,10 @@ Module['FS_createPath']('/BlueprintsToCpp/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_C:/Users/John/Desktop/02 Starter Kit Overview/BlueprintsToCpp/Binaries/HTML5/BlueprintsToCpp.data');
+              Module['removeRunDependency']('datafile_C:/Users/John/Desktop/hm/MyProject/Binaries/HTML5/MyProject.data');
 
     };
-    Module['addRunDependency']('datafile_C:/Users/John/Desktop/02 Starter Kit Overview/BlueprintsToCpp/Binaries/HTML5/BlueprintsToCpp.data');
+    Module['addRunDependency']('datafile_C:/Users/John/Desktop/hm/MyProject/Binaries/HTML5/MyProject.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -173,6 +173,6 @@ Module['FS_createPath']('/BlueprintsToCpp/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 103, "filename": "/UE4CommandLine.txt"}, {"start": 103, "audio": 0, "end": 544920962, "filename": "/BlueprintsToCpp/Content/Paks/BlueprintsToCpp-HTML5.pak"}], "remote_package_size": 544920962, "package_uuid": "02f9585d-b900-4fc1-9127-76d9503dc11d"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 91, "filename": "/UE4CommandLine.txt"}, {"start": 91, "audio": 0, "end": 580719323, "filename": "/MyProject/Content/Paks/MyProject-HTML5.pak"}], "remote_package_size": 580719323, "package_uuid": "671209b6-6a8a-4887-8f23-25cfebf3de4d"});
 
 })();
